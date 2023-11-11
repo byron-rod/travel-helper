@@ -20,7 +20,7 @@ const Map = ({
   return (
     <div style={{ height: "100vh", width: "100%" }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyCV_LVLDjp_ei5ZwDxEkXAOoAhdPAQFtH0" }}
+        bootstrapURLKeys={{ key: process.env.RREACT_APP_GOOGLE_MAPS_API_KEY }}
         defaultCenter={coords}
         center={coords}
         defaultZoom={16}
